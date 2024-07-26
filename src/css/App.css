@@ -1,0 +1,41 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-box-container {
+  border: 1px solid #EEEEEE;
+  padding: 10px 0 10px 0;
+  border-radius: 6px;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12);
+  box-shadow: 0px 0px 4px 0px rgba(20, 20, 20, 0.1);
+}
+
+.button-container{
+  box-sizing: border-box;
+  padding:10px 15px 10px 15px
+}
+
+.copyright {
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+  color: var(--grey);
+}
+
+.copyright a{
+  color: var(--grey);
+}
+
+.copyright a:hover {
+  color: var(--gray);
+}

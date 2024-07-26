@@ -1,0 +1,89 @@
+.checkbox-container-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 15px 8px 22px;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background-color: var(--white);
+    border: 0.75px solid var(--grey);
+    border-radius: 7px;
+}
+
+.checkbox:hover input~.checkmark {
+    border: 0.75px solid var(--gray);
+}
+
+.checkbox input:checked~.checkmark {
+    background-color: var(--blue);
+}
+
+/* Create the checkmark which is hidden when not checked */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* show the check icon when we hover on the checkbox and it is not chcked */
+.checkbox:hover input:not(:checked) .checkmark:after{
+    display: block;
+    border: solid var(--gray);
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+

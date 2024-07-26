@@ -1,0 +1,42 @@
+/* define coloes to be used */
+:root{
+  --white:'#FFFFF';
+  --black:#1F2128;
+  --orange: #FFCE22;
+  --orange-hover:#FFD84D;
+  --grey:#CDCDCD;
+  --gray:#777777;
+  --blue:#0782e7
+
+}
+
+body {
+  color: var(--black);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,h2,h3,h4,h5{
+  margin: 0 0; 
+  font-weight: 400;
+}
+a{
+  color: var(--black);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--black)
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.w-100{
+  width: 100%;
+}
